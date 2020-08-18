@@ -1,17 +1,9 @@
 <template>
   <div id="app">
-    <header>
-      <div class="container">
-        <div class="head-container">
-          <img src="@/assets/logo.png" alt="">
-          <ul>
-            <li v-for="(item, key) in list" :key="key">{{item}}</li>
-            <li v-if="isAuth == true"><button @click="outConsole">Login</button></li>
-            <li v-if="isAuth == true"><button @click="outConsole">Register</button></li>
-          </ul>
-        </div>
-      </div>
-    </header>
+    <header-component
+    :list="list"
+    :isAuth="isAuth">
+    </header-component>
     <div class="main">
       <div class="container">
         <div class="main-container">
@@ -47,7 +39,7 @@
         <div class="directions">
           <div class="directions-paragraph">
             <h1>Featured destinations</h1>
-            <a href=""><p>View all ></p></a>
+            <a href=""><p>View all</p></a>
           </div>
           <div class="directions-images">
             <img src="@/assets/first-directions.png" alt="">
@@ -59,30 +51,17 @@
 </template>
 
 <script>
-
-
-
+import HeaderComponent from './components/Header'
 export default {
+  components: {
+    HeaderComponent
+  },
   data() {
     return {
-      list: [],
+      list: ['Home', 'Distinations', 'About', 'Partner'],
       isAuth: true
     }
   },
-
-  methods: {
-    outConsole() {
-      console.log(123)
-    }
-  },
-  computed: {},
-  mounted() {
-
-    console.log('start')
-    this.list = ['Home', 'Distinations', 'About', 'Partner']
-  },
-  components: {
-  }
 }
 </script>
 
