@@ -7,8 +7,9 @@
     <main-component>
     </main-component>
     <section02-component>
-      
     </section02-component>
+    <destinations-component>
+    </destinations-component>
   </div>
 </template>
 
@@ -16,12 +17,14 @@
 import HeaderComponent from './components/Header'
 import MainComponent from './components/Main.vue'
 import Section02Component from './components/Section02.vue'
+import DestinationsComponent from './components/Destinations.vue'
 
 export default {
   components: {
     HeaderComponent,
     MainComponent,
-    Section02Component
+    Section02Component,
+    DestinationsComponent
   },
   data() {
     return {
