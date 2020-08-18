@@ -47,8 +47,13 @@
     background: #fb8f1d;
     color: #fff;
     outline: none;
-    border: none;
+    border: 1px solid #fb8f1d;
     border-radius: 8px;
     font-weight: 600;
+}
+
+.info-text button:hover {
+    color:#fb8f1d;
+    background: #fff;
 }
 </style>
