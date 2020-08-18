@@ -10,7 +10,6 @@
                     <p>For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect
                     trip, but now, they can also let Lonely Planet Experiences lead the way</p>
                     <button>Learn more</button>
-
                 </div>
             </div>
         </div>
