@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <header-component
     :list="list"
     :isAuth="isAuth">
