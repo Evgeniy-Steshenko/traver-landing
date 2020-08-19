@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <header-component
     :list="list"
     :isAuth="isAuth">
@@ -10,6 +11,10 @@
     </section02-component>
     <destinations-component>
     </destinations-component>
+    <guides-component>
+    </guides-component>
+    <testimonials-component>
+    </testimonials-component>
   </div>
 </template>
 
@@ -18,13 +23,17 @@ import HeaderComponent from './components/Header'
 import MainComponent from './components/Main.vue'
 import Section02Component from './components/Section02.vue'
 import DestinationsComponent from './components/Destinations.vue'
+import GuidesComponent from './components/Guides.vue'
+import TestimonialsComponent from './components/Testimonials.vue'
 
 export default {
   components: {
     HeaderComponent,
     MainComponent,
     Section02Component,
-    DestinationsComponent
+    DestinationsComponent,
+    GuidesComponent,
+    TestimonialsComponent
   },
   data() {
     return {

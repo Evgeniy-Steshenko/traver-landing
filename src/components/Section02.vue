@@ -43,13 +43,16 @@
 }
 
 .info-text button {
-    padding: 12px 37px;
+    padding: 0 37px;
     background: #fb8f1d;
     color: #fff;
     outline: none;
     border: 1px solid #fb8f1d;
     border-radius: 8px;
     font-weight: 600;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 40px;
 }
 
 .info-text button:hover {

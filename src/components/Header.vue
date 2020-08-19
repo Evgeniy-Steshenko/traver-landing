@@ -50,7 +50,8 @@ body {
 }
 
 @media (max-width: 767px) {
-  .container {
+  .container {  
+    margin: 0 25px;
     max-width: none;
   }
 }
@@ -91,12 +92,15 @@ body {
 }
 
 .head button {
-  padding: 8px 46px;
+  padding: 0 46px;
   color: #fff;
   background: #fb8f1d;
   border: 1px solid #fb8f1d;
   outline: none;
   border-radius: 8px;
+   font-weight: bold;
+    font-size: 16px;
+    line-height: 40px;
 }
 
 .head button:hover {
