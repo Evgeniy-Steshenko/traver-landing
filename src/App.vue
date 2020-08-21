@@ -14,16 +14,28 @@
     </guides-component>
     <testimonials-component>
     </testimonials-component>
+    <stories-component>
+    </stories-component>
+    <footer-component
+    :destinations="footerDestinations"
+    :shop="footerShop"
+    :interest="footerInterest"
+    :glista="footerList">
+    </footer-component>
   </div>
 </template>
 
+
 <script>
-import HeaderComponent from './components/Header'
+
+import HeaderComponent from './components/Header.vue'
 import MainComponent from './components/Main.vue'
 import Section02Component from './components/Section02.vue'
 import DestinationsComponent from './components/Destinations.vue'
 import GuidesComponent from './components/Guides.vue'
 import TestimonialsComponent from './components/Testimonials.vue'
+import StoriesComponent from './components/Stories.vue'
+import FooterComponent from './components/Footer.vue'
 
 export default {
   components: {
@@ -32,12 +44,19 @@ export default {
     Section02Component,
     DestinationsComponent,
     GuidesComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    StoriesComponent,
+    FooterComponent
   },
   data() {
     return {
       list: ['Home', 'Distinations', 'About', 'Partner'],
-      isAuth: true
+      isAuth: true,
+      footerList: ['Destinations', 'Shop', 'Iterests'],
+      footerDestinations: ['Africa','Antarctica', 'Asia', 'Europe', 'America'],
+      footerShop: ['Destination Guides', 'Pictorial & Gifts', 'Special Offers', 'Delivery Times','FAQs'],
+      footerInterest: ['Adventure Travel','Art And Culture', 'Wildlife And Nature', 'Family Holidays', 'Food And Drink']
+
     }
   },
 }

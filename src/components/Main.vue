@@ -5,6 +5,8 @@
                 <div class="main-explore">
                     <h1>Explore and Travel</h1>
                     <p>Holiday finder</p>
+                <div class="line">
+                </div>
                 </div>
                
                 <div class="main-image">
@@ -40,12 +42,19 @@ export default {
     font-size: 22px;
     line-height: 27px;
     font-weight: 600;
+    margin-bottom: 0;
+
 }
 
 .main .main-image img {
     width: 100%;
     height: 100%;
 }
-
-
+.line {
+    border-bottom: 6px solid #000;
+    border-width: 3px;
+    max-width: 35px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
 </style>
