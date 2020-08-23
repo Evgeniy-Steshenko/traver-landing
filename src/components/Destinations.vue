@@ -4,7 +4,9 @@
             <div class="destinations">
                 <div class="destinations-text">
                     <h1>Featured destinations</h1>
-                    <p>View all</p>
+                    <p>View all 
+                    <i class="el-icon-arrow-right"></i>
+                    </p>
                 </div>
                 <div class="destinations-images">
                     <div class="destinations-image1">
@@ -52,10 +54,16 @@
     justify-content: space-between;
 }
 
-.destinations-text p {
-    color: #fb8f1d;
+.destinations-text p, i {
+    color: #FB8F1D;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 60px;
 }
 
+.destinations-text p, i:hover {
+    cursor: pointer;
+}
 .destinations-images {
     display: flex;
     justify-content: space-between;
@@ -63,6 +71,7 @@
 }
 
 .destinations-images .destinations-image1 {
+    background-image: url(../assets/first-directions.png);
     position: relative;
     width: 260px;
     height: 325px;

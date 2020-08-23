@@ -5,21 +5,33 @@
           <img src="@/assets/logo.png" alt="">
           <ul>
             <li v-for="(item, key) in list" :key="key">{{item}}</li>
-            <li v-if="isAuth == true"><button @click="outConsole">Login</button></li>
-            <li v-if="isAuth == true"><button @click="outConsole">Register</button></li>
+            <li v-if="isAuth == true"><button @click="$modal.show('Login')">Login</button></li>
+            <li v-if="isAuth == true"><button @click="$modal.show('Register')">Register</button></li>
           </ul>
         </div>
       </div>
+      <modal name="Login">
+
+      </modal>
+      <modal name="Register"></modal>
     </header>
 </template>
 
 <script>
+
+
 export default {
+
     props: ['list', 'isAuth'],
     methods: {
         outConsole() {
         console.log(123)
         }
+    },
+    
+    data () {
+      return {
+      }
     },
 }
 </script>
@@ -35,6 +47,18 @@ body {
 .container  {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 1920px) {
+  .container {
+    max-width: 1650px;
+  }
+}
+
+@media (max-width: 1650px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 @media (max-width: 1200px) {

@@ -18,7 +18,12 @@
             <div class="testimonials-img">
             <img src="@/assets/Testimonials-photo.png" alt="">
             <div class="img-choice">
-                <p>alsdl;aa1321321312312312312sdasda</p>
+                <div class="prev icon disable">
+                <i class="el-icon-arrow-left"></i>
+                </div>
+                <div class="next icon">
+                <i class="el-icon-arrow-right"></i>
+                </div>
             </div>
             </div>
         </div>
@@ -39,6 +44,7 @@
     align-items: center;
     margin-right: 10%;
     margin-left: 5%;
+
 }
 
 .testimonials-text {
@@ -71,8 +77,51 @@
     background-color: #fff;
     max-width: 37%;
     max-height: 27%;
-    bottom: 1%;
-    left: 66%;
+    bottom: 0;
+    right: 0;
     border-top-left-radius: 8px;
 }
+
+.img-choice {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 130px;
+    height: 60px;
+}
+
+.img-choice .icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    color: #000;
+    border-radius: 100%;
+}
+
+.img-choice .icon:hover {
+  cursor: pointer;
+
+}
+
+.img-choice .icon i {
+    font-weight: bold;
+}
+
+.img-choice .icon:last-child {
+    margin-left: 20px
+}
+
+.img-choice .disable {
+    border-color: #a7a7a7;
+    color: #a7a7a7;
+}
+
+.img-choice .disable:hover {
+  cursor: default;
+}
+
 </style>

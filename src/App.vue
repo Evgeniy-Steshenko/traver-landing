@@ -19,8 +19,7 @@
     <footer-component
     :destinations="footerDestinations"
     :shop="footerShop"
-    :interest="footerInterest"
-    :glista="footerList">
+    :interest="footerInterest">
     </footer-component>
   </div>
 </template>
@@ -52,11 +51,10 @@ export default {
     return {
       list: ['Home', 'Distinations', 'About', 'Partner'],
       isAuth: true,
-      footerList: ['Destinations', 'Shop', 'Iterests'],
-      footerDestinations: ['Africa','Antarctica', 'Asia', 'Europe', 'America'],
-      footerShop: ['Destination Guides', 'Pictorial & Gifts', 'Special Offers', 'Delivery Times','FAQs'],
-      footerInterest: ['Adventure Travel','Art And Culture', 'Wildlife And Nature', 'Family Holidays', 'Food And Drink']
-
+      footerDestinations: ['Destinations', 'Africa','Antarctica', 'Asia', 'Europe', 'America'],
+      footerShop: ['Shop', 'Destination Guides', 'Pictorial & Gifts', 'Special Offers', 'Delivery Times','FAQs'],
+      footerInterest: ['Iterests', 'Adventure Travel','Art And Culture', 'Wildlife And Nature', 'Family Holidays', 'Food And Drink']
+      
     }
   },
 }
@@ -69,5 +67,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
+* {
+  box-sizing: border-box;
+}
 
+i {
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+}
 </style>
